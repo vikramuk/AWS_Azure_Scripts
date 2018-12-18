@@ -1,0 +1,14 @@
+AWS IoT supports the following certiﬁcate-signing algorithms:
+• SHA256WITHRSA 
+• SHA384WITHRSA 
+• SHA384WITHRSA 
+• SHA512WITHRSA 
+• RSASSAPSS 
+• DSA_WITH_SHA256 
+• ECDSA-WITH-SHA256 
+• ECDSA-WITH-SHA384 
+• ECDSA-WITH-SHA512
+
+https://tls.mbed.org/supported-ssl-ciphersuites
+
+curl --tlsv1.2 --cacert root-CA.crt --cert 9cea2903e3-certificate.pem.crt --key 9cea2903e3-private.pem.key -X POST -d "{ \"serialNumber\": \"G030JF053216F1BS\", \"clickType \": \"SINGLE\", \"batteryVoltage\": \"2000mV\" }" "https://a3h6jjcgxk2mdj-ats.iot.ap-south-1.amazonaws.com:8443/topics/iotbutton/virtualButton?qos=1"
